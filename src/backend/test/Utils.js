@@ -1,5 +1,5 @@
 const { ethers } = require("hardhat");
-const toWei = (num) => ethers.utils.parseEther(num.toString());
-const fromWei = (num) => ethers.utils.formatEther(num);
-exports.toWei = toWei;
-exports.fromWei = fromWei;
+const toWei = (num) => ethers.parseEther(num.toString());
+const fromWei = (num) => ethers.formatEther(num);
+
+module.exports = { toWei, fromWei };
